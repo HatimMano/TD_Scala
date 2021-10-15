@@ -1,4 +1,6 @@
-sealed abstract class Vehicle
-class Car extends Vehicle
-class Motorbike extends Vehicle
-class Boat extends  Vehicle
+sealed trait Vehicle{
+  val model: String
+}
+case class Car(registration: String, model: String) etends Vehicle
+case class Motorcycle(registration: String, model: String) etends Vehicle
+case class Boat(registration: String, model: String) etends Vehicle
